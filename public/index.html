@@ -611,7 +611,7 @@
     async function loadResponses() {
       const tbody = document.getElementById('adminTableBody');
       try {
-        const res = await fetch("http://localhost:5001/api/admin/submissions");
+        const res = await fetch("/api/submit");
         const data = await res.json();
         tbody.innerHTML = '';
 
